@@ -3,7 +3,6 @@ import json
 import os
 from glob import glob
 
-
 def format_ref_images(file_paths):
     file_names = [os.path.basename(path).split(".")[0] for path in file_paths]
     result_dict = {k: [v] for k, v in zip(file_names, file_paths)}
